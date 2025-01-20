@@ -14,9 +14,9 @@ if not os.path.exists(CONFIG_PATH):
     raise FileNotFoundError(f"配置文件 {CONFIG_PATH} 不存在，请确保文件已创建并包含 API 信息")
 
 
-# @app.route('/api/upload_image/', methods=['POST'])
 # def upload_image():
 @app.route('/upload_image/', methods=['POST'])
+# @app.route('/api/upload_image/', methods=['POST'])
 def upload_image():
     """
     接收单个或多个文件，调用 OCR 识别，返回识别结果
@@ -84,7 +84,7 @@ def upload_image():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=14326,debug=True)
+    app.run(host='0.0.0.0',port=14325,debug=True)
     # app.run(debug=True)
 
 

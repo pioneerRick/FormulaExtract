@@ -147,6 +147,9 @@ export default {
         const response = await fetch("/api/upload_image/", {
           method: "POST",
           body: formData,
+          headers: {
+            'Cache-Control': 'no-cache'
+          }
         });
 
         const results = await response.json();

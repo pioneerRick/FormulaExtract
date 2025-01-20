@@ -2,7 +2,7 @@
 
 ## 页面展示
 
-![image-20250120015710198](C:\Users\97158\AppData\Roaming\Typora\typora-user-images\image-20250120015710198.png)
+![image-20250120015710198](.\imgs\1.png)
 
 ## 支持
 
@@ -56,7 +56,7 @@ yarn：推出的包管理工具，取代npm,比npm块，是对于npm的新设计
 
 ## 2.1.配置接口
 
-![image-20250120015154703](C:\Users\97158\AppData\Roaming\Typora\typora-user-images\image-20250120015154703.png)
+![image-20250120015154703](.\imgs\image-20250120015154703.png)
 
 #### 2.1.1获取 API（必需）
 
@@ -97,15 +97,34 @@ API 的获取方法如下：
 
 ## 2.2运行
 
-![image-20250120015539414](C:\Users\97158\AppData\Roaming\Typora\typora-user-images\image-20250120015539414.png)
+![image-20250120015539414](.\imgs\image-20250120015539414.png)
 
 pycharm 打开之后终端输入python app.py就能用
 
-# 3.提醒
+# 3.注意事项
+
+## 3.1 端口占用问题
 
 如何显示没有返回的话，注意检测是不是key-id Api上限到了或者端口的问题，flask5000端口已经被使用了。
 
+## 3.2识别失败
+
 公式没有提取到的话可以多加点白边进去，即是公式内容在图片正中，周围一圈白。
+
+## 3.3 服务器部署问题
+
+后端有一句：rewrite: (path) => path.replace(/^\/api/, ''), // 可选：去掉 /api 前缀。
+
+但是实际上如果前端部署在服务器上，它还是访问的/api/upload_image。
+
+```
+# @app.route('/upload_image/', methods=['POST'])
+@app.route('/api/upload_image/', methods=['POST'])
+```
+
+前端部署在宝塔服务器上将路由设置设置为/api/upload_image/。
+
+但是如果前端还是在本地，就设置为/upload_image/
 
 # 4.借鉴
 
