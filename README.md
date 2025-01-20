@@ -2,7 +2,9 @@
 
 ## 页面展示
 
-![image-20250120015710198](.\imgs\1.png)
+![1.png](https://s2.loli.net/2025/01/20/fDcZERBNCKAd7nO.png)
+
+
 
 ## 支持
 
@@ -56,7 +58,7 @@ yarn：推出的包管理工具，取代npm,比npm块，是对于npm的新设计
 
 ## 2.1.配置接口
 
-![image-20250120015154703](.\imgs\image-20250120015154703.png)
+![image-20250120015154703.png](https://s2.loli.net/2025/01/20/Beao8GQsdNYDint.png)
 
 #### 2.1.1获取 API（必需）
 
@@ -97,7 +99,7 @@ API 的获取方法如下：
 
 ## 2.2运行
 
-![image-20250120015539414](.\imgs\image-20250120015539414.png)
+![image-20250120015539414.png](https://s2.loli.net/2025/01/20/BCNnzUTh97AV4aJ.png)
 
 pycharm 打开之后终端输入python app.py就能用
 
